@@ -14,7 +14,7 @@ body{
     margin: 0px;
     padding: 0px;
     font-size: 15px;
-    line-height: 25.5px;
+    line-height: 170%;
     background: #f2f2f2;
 
 }
@@ -78,6 +78,15 @@ a:hover{
     border-bottom: none;
 }
 
+.faq-title:hover{
+    cursor: pointer;
+}
+
+
+.faq-toggle-icon:hover{
+    cursor: pointer;
+}
+
 
 .times{
     margin-top: 20px;
@@ -138,6 +147,46 @@ a:hover{
         width: 110px;
         height: 110px; 
     }
+}
+
+/*
+    css for desktop
+*/
+
+@media (min-width: 992px) {
+    .main-contents::before{
+        content: '';
+        position: absolute;
+        top: -10px;
+        right: 0px;
+        background: url(img/bg1.png);
+        height: 400px;
+        width: 265px;
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 310px;
+    }
+
+    .main-contents::after{
+        content: '';
+        position: absolute;
+        top: 315px;
+        right: 0;
+        background: url(img/bg2.png);
+        height: 325px;
+        width: 290px;
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 300px;
+
+    }
+
+    .chat{
+        margin-top: 80px;
+    }
+     
 }
 
 
