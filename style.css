@@ -154,7 +154,7 @@ a:hover{
 */
 
 @media (min-width: 992px) {
-    .main-contents::before{
+    .main-contents:before{
         content: '';
         position: absolute;
         top: -10px;
@@ -168,7 +168,7 @@ a:hover{
         background-size: 310px;
     }
 
-    .main-contents::after{
+    .main-contents:after{
         content: '';
         position: absolute;
         top: 315px;
