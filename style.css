@@ -3,7 +3,10 @@
     --sgreen: #3ad66a;
 }
 
-.container-fluid{
+
+
+html{
+    margin: 0px;
     padding: 0px;
 }
 
@@ -21,7 +24,7 @@ body{
 
 p{
     font-size: 15px;
-    line-height: 25.5px;
+    line-height: 170%;
     font-weight: 500;
     margin: 0;
     padding: 0;
@@ -61,7 +64,7 @@ a:hover{
 
 .top-section{
     margin-top: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .section-heading{
@@ -78,15 +81,25 @@ a:hover{
     border-bottom: none;
 }
 
+.faq-title{
+    padding-top: 10px;
+}
 .faq-title:hover{
     cursor: pointer;
 }
-
+.faq-toggle-icon{
+    float: left;
+}
 
 .faq-toggle-icon:hover{
     cursor: pointer;
 }
-
+.plus, .minus{
+   padding-top: 10px;
+   margin-right: 10px;
+   padding-left: 0px;
+    vertical-align: middle;
+}
 
 .times{
     margin-top: 20px;
@@ -123,6 +136,26 @@ a:hover{
     color: var(--sgreen);
 }
 
+.main-contents:before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 0px;
+    width: 0px;
+
+}
+
+.main-contents:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0px;
+    width: 0px;   
+
+}
+
 /*
     css for tablet devices
 */
@@ -146,6 +179,50 @@ a:hover{
     .person img{
         width: 110px;
         height: 110px; 
+    }
+
+    .top-section{
+        margin-bottom: 60px;
+    }
+
+    .faq-title{
+        padding-top: 8px;
+    }
+    .faq{
+        border-bottom: 1px solid var(--sgreen);
+        margin-top: 25px;
+        padding-bottom: 13px;
+    }
+    
+    .faq:last-child{
+        border-bottom: none;
+    }
+    .faq-text{
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .faq-toggle-icon{
+        float: right;
+    }
+
+    .main-contents:before{
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 0px;
+        width: 0px;
+
+    }
+
+    .main-contents:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 0px;
+        width: 0px;   
+
     }
 }
 
@@ -171,7 +248,7 @@ a:hover{
     .main-contents:after{
         content: '';
         position: absolute;
-        top: 315px;
+        top: 340px;
         right: 0;
         background: url(img/bg2.png);
         height: 325px;
@@ -185,6 +262,34 @@ a:hover{
 
     .chat{
         margin-top: 80px;
+    }
+
+   
+
+    .faq{
+        border-bottom: 1px solid var(--sgreen);
+        margin-top: 25px;
+        padding-bottom: 13px;
+    }
+    
+    .faq:last-child{
+        border-bottom: none;
+    }
+
+    .faq-title{
+        padding-top: 8px;
+    }
+
+    .top-section{
+        margin-bottom: 70px;
+    }
+    
+    .faq-text{
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .faq-toggle-icon{
+        float: right;
     }
      
 }
